@@ -12,37 +12,62 @@ export default function App() {
   return (
     <Box>
       <Container maxWidth="md" style={{backgroundColor: 'transparent', padding: 30, boxShadow: 'none'}}>
-        <Container maxWidth="sm" sx={{p: {
-          xs: 5,
-          sm: 10
-        }}} >
-          <Stack spacing={5}>
-            <Grid container >
-              <Grid item spacing={2} sm={6} xs={12}>
-                <Typography variant="h5" component="h3" color="primary">
-                  Bitcoin Scout
-                </Typography>
-              </Grid>
-              <Grid item sm={6} xs={12}>
-                <Link onClick={() => setOpen(true)}>
-                  <Typography variant="h5" component="h3" color="primary" align='right'>
-                  Join the waitlist ={'>'}
-                  </Typography>
+        <Grid container spacing={4} columnSpacing={4}>
+          <Grid item xs={12}>
+            <Container sx={{p: {
+              xs: 5,
+              sm: 10
+            }}} >
+              <Stack spacing={5}>
+                <Grid container >
+                  <Grid item spacing={2} sm={6} xs={12}>
+                    <Typography variant="h5" component="h3" color="primary">
+                      Bitcoin Scout
+                    </Typography>
+                  </Grid>
+                  <Grid item sm={6} xs={12}>
+                    <Link onClick={() => setOpen(true)}>
+                      <Typography variant="h5" component="h3" color="primary" align='right'>
+                      Join the waitlist ={'>'}
+                      </Typography>
 
-                </Link>
-              </Grid>
-            </Grid>
-            <Typography component='h1' variant='h2'>
-              Connect With Bitcoiners
-            </Typography>
-            <Typography component='p' variant='body1' sx={{paddingBottom: 5}}>
-              Connect with diversely skilled bitcoiners seeking to team up and create innovative products and services that empower the bitcoin ecosystem.
-            </Typography>
-            <Button color="secondary" variant="contained" onClick={() => setOpen(true)} size="large">
-              Join the waitlist
-            </Button>
-          </Stack>
-        </Container>
+                    </Link>
+                  </Grid>
+                </Grid>
+                <Typography component='h1' variant='h2'>
+                  Connect With Bitcoiners
+                </Typography>
+                <Typography component='p' variant='body1' sx={{paddingBottom: 5}}>
+                  Connect with diversely skilled bitcoiners seeking to team up and create innovative products and services that empower the bitcoin ecosystem.
+                </Typography>
+                <Button color="secondary" variant="contained" onClick={() => setOpen(true)} size="large">
+                  Join the waitlist
+                </Button>
+              </Stack>
+            </Container>
+
+          </Grid>
+          {/* <Grid item sm={12} xs={12} md={6}>
+            <Container>
+              <Typography>
+                This is just a test
+              </Typography>
+              <Button>
+                Just do it
+              </Button>
+            </Container>
+          </Grid>
+          <Grid item sm={12} xs={12} md={6}>
+            <Container>
+            <Typography>
+                This is just a test
+              </Typography>
+              <Button>
+                Just do it
+              </Button>
+            </Container>
+          </Grid> */}
+        </Grid>
       </Container>
       <SubscribeModal open={open} setOpen={setOpen}/>
     </Box>

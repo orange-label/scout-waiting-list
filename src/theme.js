@@ -19,7 +19,7 @@ const theme = createTheme({
         root: {
           backgroundColor: 'rgb(255,243,216)',
           boxShadow: '41px 27px 0px 5px rgb(9,0,27)',
-          padding: 0,
+          padding: 10,
           '@media (max-width:600px)': {
             boxShadow: '15px 15px 0px 5px rgb(9,0,27)',
           },
@@ -54,9 +54,9 @@ const theme = createTheme({
       }
     },
     h5: {
-      fontSize: '1.6rem',
+      fontSize: '1.2rem',
       '@media (max-width:600px)': {
-        fontSize: '1.1rem'
+        fontSize: '1rem'
       }
     }
   }
