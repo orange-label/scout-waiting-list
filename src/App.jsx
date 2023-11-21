@@ -12,7 +12,10 @@ export default function App() {
   return (
     <Box>
       <Container maxWidth="md" style={{backgroundColor: 'transparent', padding: 30, boxShadow: 'none'}}>
-        <Container maxWidth="sm" sx={{p: 5}} >
+        <Container maxWidth="sm" sx={{p: {
+          xs: 5,
+          sm: 10
+        }}} >
           <Stack spacing={5}>
             <Grid container >
               <Grid item spacing={2} sm={6} xs={12}>

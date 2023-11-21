@@ -20,6 +20,9 @@ const theme = createTheme({
           backgroundColor: 'rgb(255,243,216)',
           boxShadow: '41px 27px 0px 5px rgb(9,0,27)',
           padding: 10,
+          '@media (max-width:600px)': {
+            boxShadow: '15px 15px 0px 5px rgb(9,0,27)',
+          }
         }
       }
     }
@@ -39,6 +42,10 @@ const theme = createTheme({
     fontFamily: 'Ubuntu, monospace',
     h2: {
       fontWeight: 'bold',
+      fontSize: '4rem',
+      '@media (max-width:600px)': {
+        fontSize: '2.5rem'
+      }
     },
     body1: {
       fontSize: '1.5rem'
