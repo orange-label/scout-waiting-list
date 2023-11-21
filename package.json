@@ -1,6 +1,6 @@
 {
   "name": "bitcoin-scout-waiting-list",
-  "homepage": "https://orange-label.github.io/waiting-list",
+  "homepage": "https://orange-label.github.io/scout-waiting-list",
   "version": "5.0.0",
   "private": true,
   "scripts": {
