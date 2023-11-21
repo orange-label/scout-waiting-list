@@ -23,7 +23,7 @@ export default function App() {
               <Grid item sm={6} xs={12}>
                 <Link onClick={() => setOpen(true)}>
                   <Typography variant="h5" component="h3" color="primary" align='right'>
-                  Join the waitlist =>
+                  Join the waitlist ={'>'}
                   </Typography>
 
                 </Link>
