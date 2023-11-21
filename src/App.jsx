@@ -35,7 +35,7 @@ export default function App() {
             <Typography component='h1' variant='h2'>
               Connect With Bitcoiners
             </Typography>
-            <Typography component='p' variant='body1' sx={{paddingBottom: 10}}>
+            <Typography component='p' variant='body1' sx={{paddingBottom: 5}}>
               Connect with diversely skilled bitcoiners seeking to team up and create innovative products and services that empower the bitcoin ecosystem.
             </Typography>
             <Button color="secondary" variant="contained" onClick={() => setOpen(true)} size="large">

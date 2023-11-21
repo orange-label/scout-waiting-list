@@ -19,10 +19,10 @@ const theme = createTheme({
         root: {
           backgroundColor: 'rgb(255,243,216)',
           boxShadow: '41px 27px 0px 5px rgb(9,0,27)',
-          padding: 10,
+          padding: 0,
           '@media (max-width:600px)': {
             boxShadow: '15px 15px 0px 5px rgb(9,0,27)',
-          }
+          },
         }
       }
     }
@@ -44,11 +44,20 @@ const theme = createTheme({
       fontWeight: 'bold',
       fontSize: '4rem',
       '@media (max-width:600px)': {
-        fontSize: '2.5rem'
+        fontSize: '2rem'
       }
     },
     body1: {
-      fontSize: '1.5rem'
+      fontSize: '1.5rem',
+      '@media (max-width:600px)': {
+        fontSize: '1.1rem'
+      }
+    },
+    h5: {
+      fontSize: '1.6rem',
+      '@media (max-width:600px)': {
+        fontSize: '1.1rem'
+      }
     }
   }
 });
