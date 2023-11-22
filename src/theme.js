@@ -19,7 +19,7 @@ const theme = createTheme({
         root: {
           backgroundColor: 'rgb(255,243,216)',
           boxShadow: '41px 27px 0px 5px rgb(9,0,27)',
-          padding: 10,
+          padding: 15,
           '@media (max-width:600px)': {
             boxShadow: 'none',
             // border: '4px solid #09001B'

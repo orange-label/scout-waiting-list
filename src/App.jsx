@@ -31,8 +31,8 @@ export default function App() {
                     </Link>
                   </Grid>
                 </Grid>
-                <Typography component='h1' variant='h2'>
-                  Connect With Bitcoiners
+                <Typography component='h1' variant='h2' align="center">
+                ₿Scout
                 </Typography>
                 <Typography component='p' variant='body1' sx={{paddingBottom: 5}}>
                   Work with bitcoiners based on your skills and interests.
