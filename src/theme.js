@@ -21,7 +21,8 @@ const theme = createTheme({
           boxShadow: '41px 27px 0px 5px rgb(9,0,27)',
           padding: 10,
           '@media (max-width:600px)': {
-            boxShadow: '15px 15px 0px 5px rgb(9,0,27)',
+            boxShadow: 'none',
+            // border: '4px solid #09001B'
           },
         }
       }

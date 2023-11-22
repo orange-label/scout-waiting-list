@@ -5,24 +5,21 @@ import Box from '@mui/material/Box';
 import {Button} from '@mui/material';
 import { SubscribeModal } from './SubscribeModal';
 import { Grid, Stack, Link } from '@mui/material';
+import Copyright from './Copyright';
 
 export default function App() {
   const [open, setOpen] = useState(false)
 
   return (
     <Box>
-      <Container maxWidth="md" style={{backgroundColor: 'transparent', padding: 30, boxShadow: 'none'}}>
-        <Grid container spacing={4} columnSpacing={4}>
-          <Grid item xs={12}>
-            <Container sx={{p: {
-              xs: 5,
-              sm: 10
-            }}} >
+            <Container maxWidth="sm" sx={{marginY: 10}}>
               <Stack spacing={5}>
                 <Grid container >
                   <Grid item spacing={2} sm={6} xs={12}>
                     <Typography variant="h5" component="h3" color="primary">
-                      Bitcoin Scout
+                      <strong>
+                      ₿Scout
+                        </strong>
                     </Typography>
                   </Grid>
                   <Grid item sm={6} xs={12}>
@@ -38,37 +35,25 @@ export default function App() {
                   Connect With Bitcoiners
                 </Typography>
                 <Typography component='p' variant='body1' sx={{paddingBottom: 5}}>
-                  Connect with diversely skilled bitcoiners seeking to team up and create innovative products and services that empower the bitcoin ecosystem.
+                  Work with bitcoiners based on your skills and interests.
                 </Typography>
                 <Button color="secondary" variant="contained" onClick={() => setOpen(true)} size="large">
                   Join the waitlist
                 </Button>
               </Stack>
             </Container>
+            <Container maxWidth="sm" sx={{backgroundColor: '#D7D2C1', marginBottom: 10}}>
+            <Stack spacing={5}>
+              <Typography color="primary" variant="body1" gutterBottom>
+                Work towards a bitcoin standard. Scout out bitcoiners based on their skills and interests, and find opportunities for yourself to bring value to others based on your interests and skills.
+              </Typography>
+              <Button color="primary" variant="contained" onClick={() => setOpen(true)} size="large" fullWidth>
+                  Get notified when we launch
+              </Button>
 
-          </Grid>
-          {/* <Grid item sm={12} xs={12} md={6}>
-            <Container>
-              <Typography>
-                This is just a test
-              </Typography>
-              <Button>
-                Just do it
-              </Button>
+            </Stack>
             </Container>
-          </Grid>
-          <Grid item sm={12} xs={12} md={6}>
-            <Container>
-            <Typography>
-                This is just a test
-              </Typography>
-              <Button>
-                Just do it
-              </Button>
-            </Container>
-          </Grid> */}
-        </Grid>
-      </Container>
+      <Copyright/>
       <SubscribeModal open={open} setOpen={setOpen}/>
     </Box>
   );
