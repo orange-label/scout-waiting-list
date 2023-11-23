@@ -45,7 +45,7 @@ const theme = createTheme({
       fontWeight: 'bold',
       fontSize: '5rem',
       '@media (max-width:600px)': {
-        // fontSize: '4rem'
+        fontSize: '3.8rem'
       }
     },
     body1: {
