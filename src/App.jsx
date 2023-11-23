@@ -42,10 +42,13 @@ export default function App() {
                 </Button>
               </Stack>
             </Container>
-            <Container maxWidth="sm" sx={{backgroundColor: '#D7D2C1', marginBottom: 10}}>
+            <Container maxWidth="sm" sx={{backgroundColor: '#D7D2C1', marginBottom: 10, paddingY: 5}}>
             <Stack spacing={5}>
               <Typography color="primary" variant="body1" gutterBottom>
-                Work towards a bitcoin standard. Scout out bitcoiners based on their skills and interests, and find opportunities for yourself to bring value to others based on your interests and skills.
+                Work towards a peer to peer Bitcoin Standard. Scout out Bitcoiners based on their skills and interests, collaborate on ideas and create opportunities to contribute to expanding value in the Bitcoin eco-system.
+              </Typography>
+              <Typography color="primary" variant="body1" gutterBottom>
+                Incrementally forge your path to working in Bitcoin.
               </Typography>
               <Button color="primary" variant="contained" onClick={() => setOpen(true)} size="large" fullWidth>
                   Get notified when we launch

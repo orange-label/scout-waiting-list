@@ -43,15 +43,15 @@ const theme = createTheme({
     fontFamily: 'Ubuntu, monospace',
     h2: {
       fontWeight: 'bold',
-      fontSize: '4rem',
+      fontSize: '5rem',
       '@media (max-width:600px)': {
-        fontSize: '2rem'
+        // fontSize: '4rem'
       }
     },
     body1: {
-      fontSize: '1.5rem',
+      fontSize: '2rem',
       '@media (max-width:600px)': {
-        fontSize: '1.1rem'
+        fontSize: '1.5rem'
       }
     },
     h5: {
