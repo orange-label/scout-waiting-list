@@ -42,6 +42,7 @@ export default function App() {
                 </Button>
               </Stack>
             </Container>
+
             <Container maxWidth="sm" sx={{backgroundColor: '#D7D2C1', marginBottom: 10, paddingY: 5}}>
             <Stack spacing={5}>
               <Typography color="primary" variant="body1" gutterBottom>
@@ -55,6 +56,11 @@ export default function App() {
               </Button>
 
             </Stack>
+            </Container>
+            <Container maxWidth="sm" sx={{backgroundColor: 'black', marginBottom: 10, paddingY: 5, boxShadow: '41px 27px 0px 5px #a57aff'}}>
+              <Button fullWidth variant="contained" href="https://twitter.com/bscout_io" color="secondary">
+                Twitter/X Profile
+              </Button>
             </Container>
       <Copyright/>
       <SubscribeModal open={open} setOpen={setOpen}/>
